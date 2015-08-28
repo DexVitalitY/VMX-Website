@@ -19,7 +19,7 @@ body {
 }
 
 .text-primary {
-  color: #ff7979;
+  color: #996699;
 }
 
 p {
@@ -40,14 +40,14 @@ a.active {
 }
 
 a {
-  color: #ff7979;
+  color: #996699;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #ff7979;
+  color: #996699;
 }
 
 h1,
@@ -74,12 +74,12 @@ h6 {
 }
 
 .btn-primary {
-  border-color: #ff7979;
+  border-color: #996699;
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
   color: #fff;
-  background-color: #ff7979;
+  background-color: #996699;
 }
 
 .btn-primary:hover,
@@ -89,7 +89,7 @@ h6 {
 .open .dropdown-toggle.btn-primary {
   border-color: #f6bf01;
   color: #fff;
-  background-color: #ff7979;
+  background-color: #996699;
 }
 
 .btn-primary:active,
@@ -113,25 +113,25 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  border-color: #ff7979;
-  background-color: #ff7979;
+  border-color: #996699;
+  background-color: #996699;
 }
 
 .btn-primary .badge {
-  color: #ff7979;
+  color: #996699;
   background-color: #fff;
 }
 
 .btn-xl {
   padding: 20px 40px;
-  border-color: #ff7979;
+  border-color: #996699;
   border-radius: 3px;
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: #fff;
-  background-color: #ff7979;
+  background-color: #996699;
 }
 
 .btn-xl:hover,
@@ -141,7 +141,7 @@ fieldset[disabled] .btn-primary.active {
 .open .dropdown-toggle.btn-xl {
   border-color: #f6bf01;
   color: #fff;
-  background-color: #ff7979;
+  background-color: #996699;
 }
 
 .btn-xl:active,
@@ -165,12 +165,12 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-  border-color: #ff7979;
-  background-color: #ff7979;
+  border-color: #996699;
+  background-color: #996699;
 }
 
 .btn-xl .badge {
-  color: #ff7979;
+  color: #996699;
   background-color: #fff;
 }
 
@@ -181,7 +181,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
   font-family: "Helvetica Neue";
-  color: #ff7979;
+  color: #996699;
 }
 
 .fa-angle-double-down:before{     
@@ -192,7 +192,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-  color: #ff7979;
+  color: #996699;
 }
 
 .navbar-default .navbar-collapse {
@@ -200,8 +200,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-  border-color: #ff7979;
-  background-color: #ff7979;
+  border-color: #996699;
+  background-color: #996699;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -210,7 +210,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #ff7979;
+  background-color: #996699;
 }
 
 .navbar-default .nav li a {
@@ -224,19 +224,19 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
   outline: 0;
-  color: #ff7979;
+  color: #996699;
 }
 
 .navbar-default .navbar-nav>.active>a {
   border-radius: 0;
   color: #fff;
-  background-color: #ff7979;
+  background-color: #996699;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
   color: #fff;
-  background-color: #ff7979;
+  background-color: #996699;
 }
 
 @media(min-width:768px) {
@@ -361,11 +361,32 @@ section h3.section-subheading {
 #portfolio .portfolio-item {
   right: 0;
   margin: 0 0 15px;
+  overflow: hidden;
+  *position: relative;
 }
 
-#portfolio .portfolio-item .img-responsive{
+.inner{
+  float: left;
+  position: relative;
+  left: 50%;
+}
+
+.inner img{
   display: block;
-  margin: 0 auto;
+  position: relative;
+  left: -50%;
+}
+
+.portfolio-caption h4{
+  display: block;
+  position: relative;
+  left: -50%;
+}
+
+.portfolio-caption p{
+  display: block;
+  position: relative;
+  left: -50%;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -421,6 +442,9 @@ section h3.section-subheading {
 #portfolio .portfolio-item .portfolio-caption h4 {
   margin: 0;
   text-transform: none;
+  display: block;
+  position: relative;
+  float: left;
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
@@ -493,7 +517,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-  border-color: #ff7979;
+  border-color: #996699;
   box-shadow: none;
 }
 
@@ -571,7 +595,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: #ff7979;
+  background-color: #996699;
 }
 
 .btn:focus,
@@ -659,12 +683,12 @@ ul.social-buttons li a:active {
 /*color below is the hover color for top bar*/
 ::-moz-selection {
   text-shadow: none;
-  background: #ff7979;
+  background: #996699;
 }
 
 ::selection {
   text-shadow: none;
-  background: #ff7979;
+  background: #996699;
 }
 
 img::selection {
@@ -676,5 +700,5 @@ img::-moz-selection {
 }
 
 body {
-  webkit-tap-highlight-color: #ff7979;
+  webkit-tap-highlight-color: #996699;
 }
